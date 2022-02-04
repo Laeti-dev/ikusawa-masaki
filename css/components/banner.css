@@ -1,10 +1,27 @@
 .banner {
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
-  padding: 150px 0;
-  height: 90vh;
   margin-bottom: 16px;
-  object-fit: cover;
+}
+
+#typed{
+}
+.description{
+  height: 100vh;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px black;
+  text-align:center;
+  display: flex;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  padding-left: 300px;
 }
 
 /* // .banner h1 {

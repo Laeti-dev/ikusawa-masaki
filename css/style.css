@@ -1,2 +1,60 @@
-@import url('components/banner.css');
+/* components */
 @import url('components/avatar.css');
+@import url('components/banner.css');
+@import url('components/insta.css');
+@import url('components/navbar.css');
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  /* overflow-y: auto; */
+}
+
+ul{
+  list-style: none;
+
+}
+
+li{
+  padding: 16px;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+a{
+  text-decoration: none;
+  color: whitesmoke;
+  padding-left: 16px;;
+}
+
+.profile{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile > h1 {
+  font-size: 2rem;
+  text-decoration: none;
+  color: whitesmoke;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.instagram, .linkedin{
+  font-size: 3rem;
+  margin: auto 0;
+}
+
+i{
+  color: whitesmoke;
+  font-size: 2rem;
+}
