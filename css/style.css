@@ -4,19 +4,17 @@
 @import url('components/insta.css');
 @import url('components/navbar.css');
 
-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  transition: all ease-in-out 0.5s;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background: #040b14;
-  /* overflow-y: auto; */
+@import url('sections/portfolio.css');
+@import url('sections/header.css');
+
+body{
+  font-family:'Exo 2', sans-serif;;
 }
 
+
+h1{
+  font-family: 'Francois One', sans-serif;
+}
 ul{
   list-style: none;
 

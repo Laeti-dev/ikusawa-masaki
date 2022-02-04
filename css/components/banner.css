@@ -1,12 +1,11 @@
 .banner {
-  background-size: cover;
+  background-size: 100vh 75vw cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 0 left 24vw;
   margin-bottom: 16px;
+  width: 100vw;
 }
 
-#typed{
-}
 .description{
   height: 100vh;
   color: whitesmoke;
@@ -22,6 +21,10 @@
   font-size: 4rem;
   letter-spacing: 1px;
   padding-left: 300px;
+}
+
+.banner > h1 {
+  font-family: 'Satisfy', cursive;
 }
 
 /* // .banner h1 {
