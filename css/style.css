@@ -4,13 +4,17 @@
 @import url('components/insta.css');
 @import url('components/navbar.css');
 
-@import url('sections/portfolio.css');
+/* @import url('sections/main.css'); */
 @import url('sections/header.css');
+@import url('sections/portfolio.css');
 
 body{
   font-family:'Exo 2', sans-serif;;
 }
 
+#main {
+  margin-left:280px;
+}
 
 h1{
   font-family: 'Francois One', sans-serif;

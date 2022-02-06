@@ -1,9 +1,12 @@
 .banner {
-  background-size: 100vh 75vw cover;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(../images/Screen\ Shot\ 2022-01-24\ at\ 14.07.44.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top 0 left 24vw;
+  background-position: 100% 50%;
   margin-bottom: 16px;
-  width: 100vw;
 }
 
 .description{
@@ -13,14 +16,14 @@
   text-align:center;
   display: flex;
   overflow: hidden;
-  /* white-space: nowrap; */
+  white-space: nowrap;
   align-items: center;
   flex-direction: row;
   justify-content: center;
   font-family: 'Exo 2', sans-serif;
   font-size: 4rem;
   letter-spacing: 1px;
-  padding-left: 300px;
+  /* padding-left: 300px; */
 }
 
 .banner > h1 {
