@@ -11,19 +11,17 @@
 
 .description{
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*styling*/
+  font-family: 'Satisfy', cursive;
+  font-size: 7rem;
+  letter-spacing: 1px;
   color: whitesmoke;
   text-shadow: 1px 1px 2px black;
   text-align:center;
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  font-family: 'Exo 2', sans-serif;
-  font-size: 4rem;
-  letter-spacing: 1px;
-  /* padding-left: 300px; */
 }
 
 .banner > h1 {
@@ -44,3 +42,8 @@
 //   opacity: .7;
 //   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 // } */
+@media (max-width: 1024px) {
+  .description {
+    font-size: 4rem;
+  }
+}

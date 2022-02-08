@@ -1,0 +1,15 @@
+.content {
+  margin-left:280px;
+}
+
+@media (max-width: 1024px){
+  .content {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 8rem;
+  }
+}

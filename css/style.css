@@ -1,55 +1,21 @@
 /* components */
 @import url('components/avatar.css');
 @import url('components/banner.css');
+@import url('components/hamburger.css');
 @import url('components/insta.css');
 @import url('components/navbar.css');
 
 /* @import url('sections/main.css'); */
-@import url('sections/header.css');
+@import url('sections/aside.css');
+@import url("sections/base.css");
+@import url('sections/content.css');
 @import url('sections/portfolio.css');
 
-body{
-  font-family:'Exo 2', sans-serif;;
-}
 
-#main {
-  margin-left:280px;
-}
 
-h1{
-  font-family: 'Francois One', sans-serif;
-}
-ul{
-  list-style: none;
 
-}
 
-li{
-  padding: 16px;
-  color: whitesmoke;
-  font-size: 1.5rem;
-}
 
-a{
-  text-decoration: none;
-  color: whitesmoke;
-  padding-left: 16px;;
-}
-
-.profile{
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.profile > h1 {
-  font-size: 2rem;
-  text-decoration: none;
-  color: whitesmoke;
-  padding-top: 8px;
-  text-align: center;
-}
 
 .instagram, .linkedin{
   font-size: 3rem;

@@ -26,10 +26,14 @@
 </head>
 
 <body>
-  <div class="container-fluid" style="padding-right: 0;">
-    <header id="header">
-      <div class="d-flex flex-column">
-
+  <!-- <div class="container-fluid"> -->
+  <div class="menu-toggle">
+    <div class="hamburger">
+      <span></span>
+    </div>
+  </div>
+    <aside id="header" class="sidebar">
+      <div class="menu">
         <div class="profile">
           <img src="css/images/Screen Shot 2022-01-24 at 0.41.40.png" alt="" class="avatar-large d-block mx-auto">
           <h1 class="text-light">Masaki Ikusawa</h1>
@@ -39,7 +43,6 @@
             <a href="https://www.linkedin.com/in/masaki-ikusawa-b02477218/" class="linkedin"><i class="fab fa-linkedin"></i></i></a>
           </div>
         </div>
-
         <nav id="navbar" class="nav-menu navbar">
           <ul>
             <li><a href="#banner" class="scrollto active"><i class="fas fa-home"></i> <span>Home</span></a></li>
@@ -48,11 +51,11 @@
             <li><a href="#portfolio" class="scrollto"><i class="fas fa-image"></i></i> <span>Portfolio</span></a></li>
             <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
           </ul>
-        </nav><!-- .nav-menu -->
+        </nav>
       </div>
-    </header><!-- End Header -->
+    </aside><!-- End Header -->
 
-  <div id="main">
+  <div class="content">
     <div class="banner">
       <!-- <nav class="navbar navbar-transparent position-fixed">
         <div class="dropdown">
@@ -67,9 +70,7 @@
         </div>
       </nav> -->
       <!-- <h1 id="typed-string" class="description">Hairstylist, colorist, advisor</h1> -->
-      <div class="description">
-        <span id="typed" data-typed-items="Hairstylist, Colorist, Advisor" style="color: whitesmoke; display: inline; font-family: 'Satisfy', cursive; font-size: 7rem;"></span>
-      </div>
+        <span id="typed" class="description" data-typed-items="Hairstylist, Colorist, Advisor"></span>
     </div>
 
     <div id="about">
@@ -108,7 +109,7 @@
         <img src="" alt="">
       </div>
     </div>
-  </div>
+  <!-- </div> -->
   <!-- </div> -->
   <!-- <footer class="d-flex justify-content-center">
     <i class="fab fa-instagram"></i>
@@ -119,12 +120,13 @@
 
   <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous">
     $('.dropdown-toggle').dropdown()
-  </script>
+  </script> -->
   <script>
+    // typed.js
     let typedStrings = typed.getAttribute('data-typed-items')
     typedStrings = typedStrings.split(',')
     new Typed('#typed', {
@@ -133,6 +135,14 @@
       backSpeed: 50,
       backDelay: 2000,
       loop: true
+    });
+    // hamburger menu toggle
+    const menu_toggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    menu_toggle.addEventListener('click', ()=>{
+      menu_toggle.classList.toggle('is-active');
+      sidebar.classList.toggle('is-active');
     });
 </script>
 
