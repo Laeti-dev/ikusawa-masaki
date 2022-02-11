@@ -6,7 +6,7 @@
   height: 60px;
   width: 58px; /*needs to be set to display element with fixed property*/
   border-radius: 99px;
-  background-color: lightgray;
+  background-color: black;
   cursor: pointer;
 }
 

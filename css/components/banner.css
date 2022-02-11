@@ -1,4 +1,4 @@
-.banner {
+#banner {
   background-image:
     linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
     url(../images/Screen\ Shot\ 2022-01-24\ at\ 14.07.44.png);
@@ -24,7 +24,7 @@
   text-align:center;
 }
 
-.banner > h1 {
+#banner > h1 {
   font-family: 'Satisfy', cursive;
 }
 
@@ -45,5 +45,6 @@
 @media (max-width: 1024px) {
   .description {
     font-size: 4rem;
+    background-size: contain;
   }
 }

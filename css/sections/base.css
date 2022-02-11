@@ -1,6 +1,6 @@
 *{ /* defining the root*/
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   box-sizing: border-box;
   font-family:'Exo 2', sans-serif;;
 }
@@ -16,7 +16,7 @@ h1{
 li{
   padding: 16px;
   color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 a{

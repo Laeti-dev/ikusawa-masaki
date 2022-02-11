@@ -1,6 +1,13 @@
-.avatar-large {
-  width: 150px;
-  height: 150px;
+.avatar {
+  width: 124px;
+  height: 124px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .avatar{
+    width: 88px;
+    height: 88px;
+  }
 }

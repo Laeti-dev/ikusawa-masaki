@@ -32,10 +32,10 @@
       <span></span>
     </div>
   </div>
-    <aside id="header" class="sidebar">
+    <aside class="sidebar">
       <div class="menu">
         <div class="profile">
-          <img src="css/images/Screen Shot 2022-01-24 at 0.41.40.png" alt="" class="avatar-large d-block mx-auto">
+          <img src="css/images/Screen Shot 2022-01-24 at 0.41.40.png" alt="" class="avatar d-block mx-auto">
           <h1 class="text-light">Masaki Ikusawa</h1>
           <div class="social-links text-center">
           <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
@@ -43,12 +43,14 @@
             <a href="https://www.linkedin.com/in/masaki-ikusawa-b02477218/" class="linkedin"><i class="fab fa-linkedin"></i></i></a>
           </div>
         </div>
-        <nav id="navbar" class="nav-menu navbar">
+        <nav id="navbar" class="nav-menu">
           <ul>
-            <li><a href="#banner" class="scrollto active"><i class="fas fa-home"></i> <span>Home</span></a></li>
-            <li><a href="#about" class="scrollto"><i class="fas fa-user"></i> <span>About</span></a></li>
-            <li><a href="#resume" class="scrollto"><i class="fas fa-file-alt"></i></i> <span>Resume</span></a></li>
-            <li><a href="#portfolio" class="scrollto"><i class="fas fa-image"></i></i> <span>Portfolio</span></a></li>
+            <li><a href="#banner"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="#about"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="#resume"><i class="fas fa-file-alt"></i><span>Resume</span></a></li>
+            <li><a href="#portfolio"><i class="fas fa-image"></i><span>Portfolio</span></a></li>
+            <li><a href="#contact"><i class="far fa-paper-plane"></i> <span>Contact</span></a></li>
+
             <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
           </ul>
         </nav>
@@ -56,7 +58,7 @@
     </aside><!-- End Header -->
 
   <div class="content">
-    <div class="banner">
+    <section id="banner">
       <!-- <nav class="navbar navbar-transparent position-fixed">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,22 +73,22 @@
       </nav> -->
       <!-- <h1 id="typed-string" class="description">Hairstylist, colorist, advisor</h1> -->
         <span id="typed" class="description" data-typed-items="Hairstylist, Colorist, Advisor"></span>
-    </div>
+    </section>
 
-    <div id="about">
-      <h1 class="w-100 text-center my-3">Masaki Ikusawa</h1>
-      <div class="d-flex my-3">
+    <section id="about" class="px-5">
+      <h1 class="section-header">Masaki Ikusawa</h1>
+      <div class="row">
         <div class="col-12 col-lg-6 justify-content-center align-item-center">
-          <img class="avatar-large d-block mx-auto" alt="avatar-large" src="css/images/Screen Shot 2022-01-24 at 0.41.40.png" />
+          <img class="avatar d-block mx-auto" alt="avatar-large" src="css/images/Screen Shot 2022-01-24 at 0.41.40.png" />
         </div>
         <div class="col-12 col-lg-6">
           <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nihil animi iure voluptates voluptate, voluptatum nulla accusantium laboriosam perspiciatis, harum est non magni quidem dolores nobis modi aperiam necessitatibus eveniet.</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="resume" style="padding-left: 24px;">
-      <h1 class="w-100 text-center my-3">Resume</h1>
+    <section id="resume" class="px-5">
+      <h1 class="section-header">Resume</h1>
       <div class="row">
         <div class="col-12 col-lg-6">
           <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum nihil animi iure
@@ -99,16 +101,69 @@
             nobis modi aperiam necessitatibus eveniet.</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="Portfolio" class="insta" style="padding-left: 24px;">
-      <h1 class="w-100 text-center my-3">Portfolio</h1>
+    <section id="portfolio" class="insta px-5">
+      <h1 class="section-header">Portfolio</h1>
       <div>
         <img src="css/images/271369859_485720639948218_8425433702287318687_n.jpeg" alt="new hair">
         <img src="css/images/272127938_443644380813506_3442737248273313909_n.jpeg" alt="">
         <img src="" alt="">
       </div>
-    </div>
+    </section>
+
+    <section id="contact" class="px-5">
+      <h1 class="section-header">Contact</h1>
+
+      <div class="contact-wrapper">
+        <!-- left side : form -->
+        <form id="contact-form" class="form-container" method="post" role="form">
+          <div class="form-group">
+            <div class="col-sm-12 col-lg-6">
+              <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+            </div>
+          </div>
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+          </button>
+        </form>
+
+        <!-- right side : info -->
+        <div class="contact-container">
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Tokyo, Japan</span></i></li>
+
+            <!-- <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555"
+                    title="Give me a call">(212) 555-2368</a></span></i></li> -->
+
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:masakiikusawa@gmail.com"
+                    title="Send me an email">masakiikusawa@gmail.com</a></span></i></li>
+          </ul>
+          <hr> <!--social media-->
+            <ul class="social-list">
+              <li><a href="https://www.instagram.com/gogo19chan/?hl=fr" target="_blank" class="contact-icon">
+                  <i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/masaki-ikusawa-b02477218/" target="_blank" class="contact-icon">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+            <!-- <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/masaki-ikusawa-b02477218/" class="linkedin"><i class="fab fa-linkedin"></i></i></a> -->
+            </ul>
+          </hr>
+        </div>
+      </div>
+    </section>
+
   <!-- </div> -->
   <!-- </div> -->
   <!-- <footer class="d-flex justify-content-center">
@@ -144,6 +199,11 @@
       menu_toggle.classList.toggle('is-active');
       sidebar.classList.toggle('is-active');
     });
+
+    sidebar.addEventListener('click', ()=>{
+      menu_toggle.classList.toggle('is-active');
+      sidebar.classList.toggle('is-active');
+    })
 </script>
 
 

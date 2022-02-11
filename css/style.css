@@ -8,21 +8,6 @@
 /* @import url('sections/main.css'); */
 @import url('sections/aside.css');
 @import url("sections/base.css");
+@import url('sections/contact.css');
 @import url('sections/content.css');
 @import url('sections/portfolio.css');
-
-
-
-
-
-
-
-.instagram, .linkedin{
-  font-size: 3rem;
-  margin: auto 0;
-}
-
-i{
-  color: whitesmoke;
-  font-size: 2rem;
-}
