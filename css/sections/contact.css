@@ -173,6 +173,12 @@ textarea {
     margin-top: 60px;
     max-width: 280px;
   }
+
+  .fab {
+    color: #809bce;
+    font-size: 2rem;
+  }
+
   .social-list {
     left: 0;
   }

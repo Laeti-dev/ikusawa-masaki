@@ -15,7 +15,7 @@
   /*behaviors*/
   transition: all ease-in-out 0.5s;
   overflow-y: auto;
-  background-color: #040b14;
+  background-color: #e7d8c9;
 }
 
 .profile{
@@ -37,7 +37,7 @@
   margin: 1rem .5rem;
 }
 
-i{
+.menu i{
   color: whitesmoke;
   font-size: 2rem;
 }
