@@ -1,0 +1,487 @@
+/* components */
+.avatar {
+  width: 124px;
+  height: 124px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .avatar {
+    width: 88px;
+    height: 88px;
+  }
+}
+#banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/Screen\ Shot\ 2022-01-24\ at\ 14.07.44.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 50%;
+  margin-bottom: 16px;
+}
+#banner > h1 {
+  font-family: "Satisfy", cursive;
+}
+
+.description {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*styling*/
+  font-family: "Satisfy", cursive;
+  font-size: 7rem;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+}
+
+/* // .banner h1 {
+//   margin: 0;
+//   color: white;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//   font-size: 32px;
+//   font-weight: bold;
+// }
+
+// .banner p {
+//   font-size: 20px;
+//   color: white;
+//   opacity: .7;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+// } */
+@media (max-width: 1024px) {
+  .description {
+    font-size: 4rem;
+    background-size: contain;
+  }
+}
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  height: 60px;
+  width: 58px; /*needs to be set to display element with fixed property*/
+  border-radius: 99px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: relative;
+  top: calc(50% - 2px);
+  left: 50%;
+  transform: translate(-50%, -50%); /*transfer an element from one place to another*/
+  width: 32px;
+  /*making the hamburger lines - stack over each other*/
+  /*separating the hamburger lines*/
+}
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  /*will offset the position by 2px because*/
+  border-radius: 99px;
+  background-color: whitesmoke;
+  transition-duration: 0.25s;
+}
+.hamburger > span::before {
+  content: "";
+  top: -8px;
+}
+.hamburger > span::after {
+  content: "";
+  top: 8px;
+}
+
+/*adding animations*/
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0; /* brings the first one on the center of the screen*/
+  transform: rotate(0deg); /* brings it on the opposite way*/
+}
+
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg); /*X*/
+}
+
+.insta img {
+  max-width: 200px;
+  max-height: 350px;
+}
+
+/* .navbar-transparent{
+  background-color: transparent;
+  transition: 0.5s background-color ease;
+}
+
+.navbar-white{
+  background-color: white;
+  color: black;
+} */
+.social-links {
+  font-size: 2rem;
+}
+
+.nav-menu a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding-left: 12px 15px;
+}
+.nav-menu a:hover {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+i {
+  padding-right: 16px;
+  font-size: 1rem;
+}
+
+/* @import url('sections/main.css'); */
+.sidebar {
+  /* position */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /*sizing*/
+  min-height: 100vh;
+  width: 300px;
+  padding: 1rem 1rem;
+  /*display*/
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0; /*flex as big it can flex until */
+  /*behaviors*/
+  transition: all ease-in-out 0.5s;
+  overflow-y: auto;
+  background-color: #e7d8c9;
+}
+
+.profile {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile > h1 {
+  font-size: 2rem;
+  text-decoration: none;
+  color: whitesmoke;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.instagram > i, .linkedin > i {
+  font-size: 2.5rem;
+  margin: 1rem 0.5rem;
+}
+
+.menu i {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    max-width: 300px;
+    padding: 0;
+    transition: 0.2s linear;
+  }
+  .sidebar.is-active {
+    left: 0;
+  }
+  .profile > h1 {
+    font-size: 1.5rem;
+    margin: 8px;
+  }
+}
+* { /* defining the root*/
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Francois One", sans-serif;
+}
+
+li {
+  padding: 16px;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-left: 16px;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.form-container {
+  max-width: 100%;
+  /* z-index: -1; */
+}
+
+.form-control,
+textarea {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.send-button {
+  margin: auto;
+  margin-top: 15px;
+  height: 34px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* contact right side*/
+.contact-container {
+  max-width: 352px;
+  color: #000;
+  margin-left: 16px;
+  padding-left: 0;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin-left: -9px;
+}
+.contact-list > ul {
+  padding-left: 0;
+}
+
+.list-item {
+  color: black;
+  /* font-size: .75rem; */
+  line-height: 4;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.contact-text {
+  /* font: 300 18px 'Lato', sans-serif; */
+  /* letter-spacing: 1.9px; */
+  color: #000;
+  font-size: 1.25rem;
+}
+.contact-text a {
+  color: #000;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+.contact-text a:hover {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.place {
+  margin-left: 16px;
+}
+
+.gmail {
+  margin-left: 8px;
+  font-size: 1.25rem;
+}
+
+/*social media icones*/
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 4rem;
+  width: 100%;
+  color: #000;
+}
+.social-list > i {
+  color: #000;
+}
+.social-list > i:hover {
+  background-color: #fff;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container, .contact-container {
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+  .social-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+} */
+@media screen and (max-width: 569px) {
+  .contact-container, .contact-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+  .form-control, textarea {
+    margin: 0 auto;
+  }
+  .name, .email, textarea {
+    width: 280px;
+  }
+  .contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+  .fab {
+    color: #809bce;
+    font-size: 2rem;
+  }
+  .social-list {
+    left: 0;
+  }
+  .social-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+.content {
+  margin-left: 280px;
+}
+
+.section-header {
+  width: 100%;
+  text-align: center;
+  margin: 16px 0;
+  letter-spacing: 6px;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 0;
+  }
+}
+#portfolio {
+  padding-left: 300px;
+  color: #040b14;
+  text-align: center;
+}
+
+/* ::before selector in absolute position to create the vertical line */
+.cd-timeline {
+  overflow: hidden;
+  padding: var(--space-lg) 0;
+}
+
+.cd-timeline__container {
+  position: relative;
+  padding: var(--space-md) 0;
+}
+.cd-timeline__container::before {
+  /* this is the timeline vertical line */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: var(--cd-color-2);
+}
+
+/* Flexbox to align content and image inside each cd-timeline__block element */
+.cd-timeline__block {
+  display: flex;
+}
+
+.cd-timeline__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cd-timeline__content {
+  flex-grow: 1; /* expand element so that it takes up all the available space inside its parent*/
+}/*# sourceMappingURL=main.css.map */

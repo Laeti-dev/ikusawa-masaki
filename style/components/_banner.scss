@@ -1,0 +1,51 @@
+#banner {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(./images/Screen\ Shot\ 2022-01-24\ at\ 14.07.44.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 50%;
+  margin-bottom: 16px;
+
+  >h1 {
+      font-family: 'Satisfy', cursive;
+  }
+}
+
+.description{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*styling*/
+  font-family: 'Satisfy', cursive;
+  font-size: 7rem;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px black;
+  text-align:center;
+}
+
+
+/* // .banner h1 {
+//   margin: 0;
+//   color: white;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//   font-size: 32px;
+//   font-weight: bold;
+// }
+
+// .banner p {
+//   font-size: 20px;
+//   color: white;
+//   opacity: .7;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+// } */
+@media (max-width: 1024px) {
+  .description {
+    font-size: 4rem;
+    background-size: contain;
+  }
+}
