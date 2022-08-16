@@ -1,0 +1,16 @@
+@import '../utils/variables';
+
+.instagram>i,
+.linkedin>i {
+  font-size: 2.5rem;
+  margin: 1rem .5rem;
+}
+
+.menu i {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+.social-list i, .contact-list i {
+  color: $color-contact-icons;
+}
