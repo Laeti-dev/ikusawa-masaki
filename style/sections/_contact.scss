@@ -30,21 +30,6 @@ textarea {
 
 }
 
-.send-button {
-  margin: auto;
-  margin-top: 15px;
-  height: 34px;
-  width: 100%;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-}
-
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
-}
-
 .send-text {
   display: block;
   margin-top: 10px;
@@ -52,9 +37,7 @@ textarea {
   letter-spacing: 2px;
 }
 
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
+
 
 /* contact right side*/
 
@@ -68,11 +51,9 @@ textarea {
 .contact-list{
     list-style-type: none;
     margin-left: -9px;
-
-}
-
-.contact-list > ul {
-  padding-left: 0;
+  >ul {
+      padding-left: 0;
+  }
 }
 
 .list-item{
@@ -88,6 +69,17 @@ textarea {
   /* letter-spacing: 1.9px; */
   color: #000;
   font-size: 1.25rem;
+
+  a {
+      color: #000;
+      text-decoration: none;
+      transition-duration: 0.2s;
+
+      &:hover {
+          color: cornflowerblue;
+          text-decoration: none;
+        }
+    }
 }
 
 .place {
@@ -99,16 +91,6 @@ textarea {
   font-size: 1.25rem;
 }
 
-.contact-text a {
-  color: #000;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover{
-  color: cornflowerblue;
-  text-decoration: none;
-}
 
 /*social media icones*/
 .social-list {
@@ -117,15 +99,16 @@ textarea {
   font-size: 4rem;
   width: 100%;
   color: #000;
+
+  >i {
+      color: #000;
+
+      &:hover {
+          background-color: #fff;
+        }
+    }
 }
 
-.social-list > i {
-  color: #000;
-}
-
-.social-list i:hover {
-  background-color: #fff;
-}
 
 
 /* @media screen and (max-width: 1024px) {

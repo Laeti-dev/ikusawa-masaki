@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Error: Undefined mixin.
+ *    ,
+ * 27 | /   @include breakpoint(md) {
+ * 28 | |     &:nth-child(even) {
+ * 29 | |       flex-direction: row-reverse;  /*for even blocks -> lay out content from right to left *∕
+ * 30 | |     }
+ * 31 | \   }
+ *    '
+ *   style/sections/_timeline.scss 27:3  @import
+ *   style/main.scss 14:9                root stylesheet */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    ╷\a 27 │ ┌   @include breakpoint(md) {\a 28 │ │     &:nth-child(even) {\a 29 │ │       flex-direction: row-reverse;  /*for even blocks -> lay out content from right to left */\a 30 │ │     }\a 31 │ └   }\a    ╵\a   style/sections/_timeline.scss 27:3  @import\a   style/main.scss 14:9                root stylesheet";
+}/*# sourceMappingURL=main.css.map */

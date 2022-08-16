@@ -1,0 +1,26 @@
+@import '../utils/variables';
+
+.send-button {
+  margin: auto;
+  margin-top: 15px;
+  height: 34px;
+  width: 100%;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  background-color: $color-contact-icons;
+  transition: all .2s ease-in-out;
+
+
+  > i {
+    color: $color-aside-font;
+  }
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}

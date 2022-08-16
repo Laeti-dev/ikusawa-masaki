@@ -16,30 +16,31 @@
   left: 50%;
   transform: translate(-50%, -50%); /*transfer an element from one place to another*/
   width: 32px;
-}
 
 /*making the hamburger lines - stack over each other*/
-.hamburger > span,
-.hamburger > span::before,
-.hamburger > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 4px; /*will offset the position by 2px because*/
-  border-radius: 99px;
-  background-color: whitesmoke;
-  transition-duration: .25s;
-}
+  > span,
+  > span::before,
+  > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      /*will offset the position by 2px because*/
+      border-radius: 99px;
+      background-color: whitesmoke;
+      transition-duration: .25s;
+    }
 
 /*separating the hamburger lines*/
-.hamburger > span::before {
-  content: '';
-  top: -8px;
-}
+    > span::before {
+      content: '';
+      top: -8px;
+    }
 
-.hamburger > span::after {
-  content: '';
-  top: 8px;
+    > span::after {
+      content: '';
+      top: 8px;
+    }
 }
 
 /*adding animations*/
