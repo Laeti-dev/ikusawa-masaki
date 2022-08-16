@@ -317,31 +317,13 @@
     crossorigin="anonymous">
     $('.dropdown-toggle').dropdown()
   </script> -->
-  <script>
-    // typed.js
-    let typedStrings = typed.getAttribute('data-typed-items')
-    typedStrings = typedStrings.split(',')
-    new Typed('#typed', {
-      strings: typedStrings,
-      typeSpeed: 70,
-      backSpeed: 50,
-      backDelay: 2000,
-      loop: true
-    });
-    // hamburger menu toggle
-    const menu_toggle = document.querySelector('.menu-toggle');
-    const sidebar = document.querySelector('.sidebar');
 
-    menu_toggle.addEventListener('click', ()=>{
-      menu_toggle.classList.toggle('is-active');
-      sidebar.classList.toggle('is-active');
-    });
-
-    sidebar.addEventListener('click', ()=>{
-      menu_toggle.classList.toggle('is-active');
-      sidebar.classList.toggle('is-active');
-    })
-</script>
+  <!-- typed.js -->
+  <script type="text/javascript" src="./style/vendors/typed.js"></script>
+  <!-- hamburger menu toggle -->
+  <script type="text/javascript" src="./style/vendors/toggle.js"></script>
+  <!-- vertical timeline -->
+  <script type="text/javascript" src="./style/vendors/VerticalTimeline.js"></script>
 
 
 
