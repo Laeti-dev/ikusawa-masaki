@@ -60,6 +60,44 @@
     background-size: contain;
   }
 }
+.send-button {
+  margin: auto;
+  margin-top: 15px;
+  height: 34px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  background-color: #809bce;
+  transition: all 0.2s ease-in-out;
+}
+.alt-send-button > i {
+  color: #e7d8c9;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+.instagram > i,
+.linkedin > i {
+  font-size: 2.5rem;
+  margin: 1rem 0.5rem;
+}
+
+.menu i {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+.social-list i, .contact-list i {
+  color: #809bce;
+}
+
 .menu-toggle {
   display: none;
   position: fixed;
@@ -145,11 +183,6 @@
   font-size: 1.5rem;
 }
 
-i {
-  padding-right: 16px;
-  font-size: 1rem;
-}
-
 /* @import url('sections/main.css'); */
 .sidebar {
   /* position */
@@ -168,7 +201,7 @@ i {
   /*behaviors*/
   transition: all ease-in-out 0.5s;
   overflow-y: auto;
-  background-color: #e7d8c9;
+  background-color: #809bce;
 }
 
 .profile {
@@ -183,16 +216,6 @@ i {
   color: whitesmoke;
   padding-top: 8px;
   text-align: center;
-}
-
-.instagram > i, .linkedin > i {
-  font-size: 2.5rem;
-  margin: 1rem 0.5rem;
-}
-
-.menu i {
-  color: whitesmoke;
-  font-size: 2rem;
 }
 
 @media (max-width: 1024px) {
@@ -274,30 +297,11 @@ textarea {
   letter-spacing: 1px;
 }
 
-.send-button {
-  margin: auto;
-  margin-top: 15px;
-  height: 34px;
-  width: 100%;
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
-}
-
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all 0.2s ease-in-out;
-}
-
 .send-text {
   display: block;
   margin-top: 10px;
   font: 700 12px "Lato", sans-serif;
   letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
 }
 
 /* contact right side*/

@@ -1,3 +1,5 @@
+@import '../utils/variables';
+
 .sidebar {
   /* position */
   position: fixed;
@@ -15,7 +17,7 @@
   /*behaviors*/
   transition: all ease-in-out 0.5s;
   overflow-y: auto;
-  background-color: #e7d8c9;
+  background-color: $color-contact-icons;
 }
 
 .profile{
@@ -31,16 +33,6 @@
       padding-top: 8px;
       text-align: center;
   }
-}
-
-.instagram > i, .linkedin > i {
-  font-size: 2.5rem;
-  margin: 1rem .5rem;
-}
-
-.menu i{
-  color: whitesmoke;
-  font-size: 2rem;
 }
 
 
