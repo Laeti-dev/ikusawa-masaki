@@ -1,3 +1,5 @@
+@import '../utils/variables';
+
 /* ::before selector in absolute position to create the vertical line */
 .cd-timeline {
   overflow: hidden;
@@ -6,9 +8,9 @@
 
 .cd-timeline__container {
   position: relative;
-  padding: var(--space-md) 0;
+  // padding: var(--space-md) 0;
 
-  &::before {
+  &:before {
     /* this is the timeline vertical line */
     content: '';
     position: absolute;
@@ -16,7 +18,7 @@
     left: 18px;
     height: 100%;
     width: 4px;
-    background: var(--cd-color-2);
+    background: $color-contact-icons;
   }
 }
 
@@ -43,7 +45,7 @@
 
 .cd-timeline__content {
   flex-grow: 1; /* expand element so that it takes up all the available space inside its parent*/
-
+  padding-left: 8px;
   // @include breakpoint(md) {
   //   width: 45%;
   //   flex-grow: 0; /* prevent element from growing inside its parent */

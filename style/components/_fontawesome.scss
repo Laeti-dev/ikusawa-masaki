@@ -14,3 +14,9 @@
 .social-list i, .contact-list i {
   color: $color-contact-icons;
 }
+
+.cd-timeline__img {
+  > i {
+    color: black;
+  }
+}
