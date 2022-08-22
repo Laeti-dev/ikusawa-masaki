@@ -1,16 +1,20 @@
 #banner {
-  background-image:
-    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-    url(./images/Screen\ Shot\ 2022-01-24\ at\ 14.07.44.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 100% 50%;
-  margin-bottom: 16px;
+  // background-image:
+  //   linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+  //   url(./images/Screen\ Shot\ 2022-01-24\ at\ 14.07.44.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: 100% 50%;
+  // margin-bottom: 16px;
 
   >h1 {
       font-family: 'Satisfy', cursive;
   }
+}
+
+video {
+  min-height: 100vh;
 }
 
 .description{

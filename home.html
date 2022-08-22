@@ -72,7 +72,10 @@
         </div>
       </nav> -->
       <!-- <h1 id="typed-string" class="description">Hairstylist, colorist, advisor</h1> -->
-        <span id="typed" class="description" data-typed-items="Hairstylist, Colorist, Advisor"></span>
+        <!-- <span id="typed" class="description" data-typed-items="Hairstylist, Colorist, Advisor"></span> -->
+      <video loop muted autoplay class="background-video">
+        <source src="./style/images/slow-mo.mp4.mp4" type="video/mp4">
+      </video>
     </section>
 
     <section id="about" class="px-5">
@@ -135,7 +138,6 @@
 
             <div class="flex justify-between items-center">
               <span class="cd-timeline__date">Sept. 2022 - now</span>
-              <a href="#0" class="btn btn--subtle">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -151,7 +153,6 @@
 
             <div class="flex justify-between items-center">
               <span class="cd-timeline__date">Jan. 2018 - Aug. 2022</span>
-              <a href="#0" class="btn btn--subtle">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -167,7 +168,6 @@
 
             <div class="flex justify-between items-center">
               <span class="cd-timeline__date">Jan. 2016 - Dec. 2017</span>
-              <a href="#0" class="btn btn--subtle">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -183,7 +183,6 @@
 
             <div class="flex justify-between items-center">
               <span class="cd-timeline__date">Sept. 2012 - Dec. 2015</span>
-              <a href="#0" class="btn btn--subtle">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -199,7 +198,6 @@
 
             <div class="flex justify-between items-center">
               <span class="cd-timeline__date">May. 2010 - Jul. 2012</span>
-              <a href="#0" class="btn btn--subtle">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -217,7 +215,6 @@
 
             <div class="flex justify-between items-center">
               <span class="cd-timeline__date">Apr. 2004 - May 2009</span>
-              <a href="#0" class="btn btn--subtle">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -233,7 +230,6 @@
 
             <div class="flex justify-between items-center">
               <span class="cd-timeline__date">Apr. 2004 - Mar. 2007</span>
-              <a href="#0" class="btn btn--subtle">Read more</a>
             </div>
           </div> <!-- cd-timeline__content -->
         </div> <!-- cd-timeline__block -->
@@ -242,10 +238,9 @@
 
     <section id="portfolio" class="insta px-5">
       <h1 class="section-header">Portfolio</h1>
-      <div>
-        <img src="css/images/271369859_485720639948218_8425433702287318687_n.jpeg" alt="new hair">
-        <img src="css/images/272127938_443644380813506_3442737248273313909_n.jpeg" alt="">
-        <img src="" alt="">
+      <div id="curator-feed-default-feed-layout">
+        <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered
+          by Curator.io</a>
       </div>
     </section>
 
@@ -319,12 +314,19 @@
   </script> -->
 
   <!-- typed.js -->
-  <script type="text/javascript" src="./style/vendors/typed.js"></script>
+  <!-- <script type="text/javascript" src="./style/vendors/typed.js"></script> -->
   <!-- hamburger menu toggle -->
   <script type="text/javascript" src="./style/vendors/toggle.js"></script>
   <!-- vertical timeline -->
   <script type="text/javascript" src="./style/vendors/VerticalTimeline.js"></script>
-
+  <script type="text/javascript">
+    /* curator-feed-default-feed-layout */
+    (function () {
+      var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1; i.charset = "UTF-8";
+      i.src = "https://cdn.curator.io/published/9b34b0e7-c3c5-4cf8-be43-e346321f3280.js";
+      e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
+    })();
+  </script>
 
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
