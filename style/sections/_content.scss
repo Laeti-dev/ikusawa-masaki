@@ -1,5 +1,8 @@
+@import "../utils/variables";
+
 .content {
   margin-left:280px;
+  background-color: $color-background;
 }
 
 .section-header {

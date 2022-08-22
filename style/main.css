@@ -13,31 +13,11 @@
     height: 88px;
   }
 }
-#banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/Screen\ Shot\ 2022-01-24\ at\ 14.07.44.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 100% 50%;
-  margin-bottom: 16px;
-}
 #banner > h1 {
   font-family: "Satisfy", cursive;
 }
-
-.description {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  /*styling*/
-  font-family: "Satisfy", cursive;
-  font-size: 7rem;
-  letter-spacing: 1px;
-  color: whitesmoke;
-  text-shadow: 1px 1px 2px black;
-  text-align: center;
+#banner video {
+  width: 80vw;
 }
 
 /* // .banner h1 {
@@ -54,12 +34,6 @@
 //   opacity: .7;
 //   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 // } */
-@media (max-width: 1024px) {
-  .description {
-    font-size: 4rem;
-    background-size: contain;
-  }
-}
 .send-button {
   margin: auto;
   margin-top: 15px;
@@ -96,6 +70,10 @@
 
 .social-list i, .contact-list i {
   color: #809bce;
+}
+
+.cd-timeline__img > i {
+  color: black;
 }
 
 .menu-toggle {
@@ -201,7 +179,7 @@
   /*behaviors*/
   transition: all ease-in-out 0.5s;
   overflow-y: auto;
-  background-color: #809bce;
+  background-color: #b2967d;
 }
 
 .profile {
@@ -244,6 +222,10 @@
   padding-left: 0;
   box-sizing: border-box;
   font-family: "Exo 2", sans-serif;
+}
+
+body {
+  background-color: #D8C0A5;
 }
 
 ul {
@@ -433,6 +415,7 @@ textarea {
 }
 .content {
   margin-left: 280px;
+  background-color: #D8C0A5;
 }
 
 .section-header {
@@ -461,9 +444,8 @@ textarea {
 
 .cd-timeline__container {
   position: relative;
-  padding: var(--space-md) 0;
 }
-.cd-timeline__container::before {
+.cd-timeline__container:before {
   /* this is the timeline vertical line */
   content: "";
   position: absolute;
@@ -471,7 +453,7 @@ textarea {
   left: 18px;
   height: 100%;
   width: 4px;
-  background: var(--cd-color-2);
+  background: #809bce;
 }
 
 /* Flexbox to align content and image inside each cd-timeline__block element */
@@ -488,4 +470,5 @@ textarea {
 
 .cd-timeline__content {
   flex-grow: 1; /* expand element so that it takes up all the available space inside its parent*/
+  padding-left: 8px;
 }/*# sourceMappingURL=main.css.map */

@@ -59,31 +59,31 @@
 // and the .cd-timeline__content--bounce-in to the .cd-timeline__content to make the elements visible
 // and trigger the animation.
 
-@include breakpoint(md) {
+// @include breakpoint(md) {
 
-  // animations
-  .cd-timeline__img--hidden,
-  .cd-timeline__content--hidden {
-    visibility: hidden;
-  }
+//   // animations
+//   .cd-timeline__img--hidden,
+//   .cd-timeline__content--hidden {
+//     visibility: hidden;
+//   }
 
-  .cd-timeline__img--bounce-in {
-    animation: cd-bounce-1 0.6s;
-  }
-}
+//   .cd-timeline__img--bounce-in {
+//     animation: cd-bounce-1 0.6s;
+//   }
+// }
 
-@keyframes cd-bounce-1 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
+// @keyframes cd-bounce-1 {
+//   0% {
+//     opacity: 0;
+//     transform: scale(0.5);
+//   }
 
-  60% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
+  // 60% {
+  //   opacity: 1;
+  //   transform: scale(1.2);
+  // }
 
-  100% {
-    transform: scale(1);
-  }
-}
+  // 100% {
+  //   transform: scale(1);
+  // }
+// }

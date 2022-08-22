@@ -1,8 +1,14 @@
+@import "../utils/variables";
+
 *{ /* defining the root*/
   margin: 0;
   padding-left: 0;
   box-sizing: border-box;
-  font-family:'Exo 2', sans-serif;;
+  font-family:'Exo 2', sans-serif;
+}
+
+body{
+  background-color: $color-background;
 }
 
 ul{
