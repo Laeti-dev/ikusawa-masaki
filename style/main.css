@@ -17,7 +17,10 @@
   font-family: "Satisfy", cursive;
 }
 #banner video {
-  width: 80vw;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* // .banner h1 {
@@ -74,6 +77,10 @@
 
 .cd-timeline__img > i {
   color: black;
+}
+
+.nav-mennu i:after {
+  content: "";
 }
 
 .menu-toggle {
@@ -151,10 +158,13 @@
   font-size: 2rem;
 }
 
+.nav-menu span {
+  padding-left: 12px;
+}
 .nav-menu a {
   color: whitesmoke;
   text-decoration: none;
-  padding-left: 12px 15px;
+  transition: font-size 1s;
 }
 .nav-menu a:hover {
   color: whitesmoke;
@@ -342,12 +352,6 @@ textarea {
   font-size: 4rem;
   width: 100%;
   color: #000;
-}
-.social-list > i {
-  color: #000;
-}
-.social-list > i:hover {
-  background-color: #fff;
 }
 
 /* @media screen and (max-width: 1024px) {

@@ -10,13 +10,18 @@
 .social-links{
   font-size: 2rem;
 }
-.nav-menu a{
+.nav-menu {
+  span {
+    padding-left: 12px;
+  }
+  a {
   color: whitesmoke;
   text-decoration: none;
-  padding-left: 12px 15px;
+  transition: font-size 1s;
 
   &:hover {
       color: whitesmoke;
       font-size: 1.5rem;
     }
+   }
 }
