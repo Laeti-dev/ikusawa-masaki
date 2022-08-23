@@ -172,6 +172,10 @@
 }
 
 /* @import url('sections/main.css'); */
+.skill {
+  width: 24%;
+}
+
 .sidebar {
   /* position */
   position: fixed;
