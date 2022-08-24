@@ -279,17 +279,10 @@ a {
 
 .contact-list {
   list-style-type: none;
-  margin-left: -9px;
-}
-.contact-list > ul {
-  padding-left: 0;
 }
 
 .list-item {
-  /* font-size: .75rem; */
-  line-height: 4;
-  /* display: flex; */
-  /* flex-direction: column; */
+  line-height: 2;
 }
 
 .contact-text {
@@ -304,17 +297,11 @@ a {
   transition-duration: 0.2s;
 }
 .contact-text a:hover {
-  color: cornflowerblue;
   text-decoration: none;
+  color: #809bce;
 }
-
-.place {
-  margin-left: 16px;
-}
-
-.gmail {
-  margin-left: 8px;
-  font-size: 1.25rem;
+.contact-text a:active {
+  color: whitesmoke;
 }
 
 /*social media icones*/
@@ -331,34 +318,6 @@ a {
   }
 }
 
-@media screen and (max-width: 569px) {
-  .contact-container, .contact-wrapper {
-    float: none;
-    margin: 0 auto;
-  }
-  .form-control, textarea {
-    margin: 0 auto;
-  }
-  .name, .email, textarea {
-    width: 280px;
-  }
-  .contact-container {
-    margin-top: 60px;
-    max-width: 280px;
-  }
-  .social-list {
-    left: 0;
-  }
-  .social-list li {
-    line-height: 55px;
-    font-size: 2rem;
-  }
-  .social-list li:after {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-  }
-}
 .content {
   margin-left: 280px;
   background-color: #D8C0A5;
