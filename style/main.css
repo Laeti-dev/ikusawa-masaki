@@ -168,6 +168,10 @@
   width: 24%;
 }
 
+table {
+  margin-bottom: 24px;
+}
+
 .sidebar {
   /* position */
   position: fixed;
@@ -331,6 +335,11 @@ a {
     margin-left: 0;
   }
 }
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
 #portfolio {
   padding-left: 300px;
   color: #040b14;
