@@ -13,6 +13,10 @@
   color: #000;
   margin-left: 16px;
   padding-left: 0;
+
+  @media screen {
+    display: block;
+  }
 }
 
 .contact-list{
