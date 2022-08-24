@@ -16,12 +16,16 @@
 
   @media screen {
     display: block;
+    margin-left: 0;
   }
 }
 
 .contact-list{
     list-style-type: none;
     margin-left: -9px;
+    @media screen {
+        margin-left: -57px;;
+      }
   >ul {
       padding-left: 0;
   }

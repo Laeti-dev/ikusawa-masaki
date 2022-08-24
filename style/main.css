@@ -283,12 +283,18 @@ a {
 @media screen {
   .contact-container {
     display: block;
+    margin-left: 0;
   }
 }
 
 .contact-list {
   list-style-type: none;
   margin-left: -9px;
+}
+@media screen {
+  .contact-list {
+    margin-left: -57px;
+  }
 }
 .contact-list > ul {
   padding-left: 0;

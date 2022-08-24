@@ -20,5 +20,3 @@ VerticalTimeline.prototype.showBlocks = function() {
       })(i);
    }
 };
-
-export default VerticalTimeline();
