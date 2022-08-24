@@ -11,6 +11,7 @@
   display: flex;
   margin: auto;
   color: #000;
+  text-align: center;
 
   @media screen {
     display: block;
@@ -20,9 +21,11 @@
 
 .contact-list{
     list-style-type: none;
+    margin-left: -9px;
 
   >ul {
       padding-left: 0;
+
   }
 }
 
@@ -40,55 +43,74 @@
   font-size: 1.25rem;
 
   a {
-      color: black;
+      color: WHITE;
       text-decoration: none;
       transition-duration: 0.2s;
+
+      &:hover {
+          color: cornflowerblue;
+          text-decoration: none;
+        }
     }
 }
 
+.place {
+  margin-left: 16px;
+}
+
+.gmail {
+  margin-left: 8px;
+  font-size: 1.25rem;
+}
 
 
 /*social media icones*/
 .social-list {
-  display: flex;
-  justify-content: space-around;
-  font-size: 4rem;
-  width: 100%;
-  color: #000;
-}
-  .contact-container {
-    margin: 0 auto;
-  }
+  display: none;
 
-  .contact-container {
-    margin-top: 60px;
+  @media(max-width: 1024px) {
+    display: flex;
+    justify-content: space-around;
+    font-size: 4rem;
+    width: 100%;
+    color: #000;
   }
-  .social-list li {
-    line-height: 60px;
-  }
-  .social-list li:after {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-  }
+}
 
 
 @media screen and (max-width: 569px) {
 
-  .contact-container {
+  .contact-container, .contact-wrapper {
     float: none;
     margin: 0 auto;
   }
+  .form-control, textarea {
 
+    margin: 0 auto;
+  }
+
+
+  .name, .email, textarea {
+    width: 280px;
+  }
+
+  .contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+
+
+  .social-list {
+    left: 0;
+  }
   .social-list li {
     line-height: 55px;
     font-size: 2rem;
-    margin-left: -32px;
   }
-  // .social-list li:after {
-  //   width: 55px;
-  //   height: 55px;
-  //   line-height: 55px;
-  // }
+  .social-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
 
 }
