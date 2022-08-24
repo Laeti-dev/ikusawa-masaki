@@ -276,18 +276,10 @@ a {
     margin-left: 0;
   }
 }
-
 .contact-list {
   list-style-type: none;
 }
-
-.list-item {
-  line-height: 2;
-}
-
 .contact-text {
-  /* font: 300 18px 'Lato', sans-serif; */
-  /* letter-spacing: 1.9px; */
   color: #000;
   font-size: 1.25rem;
 }
@@ -302,6 +294,10 @@ a {
 }
 .contact-text a:active {
   color: whitesmoke;
+}
+
+.list-item {
+  line-height: 2;
 }
 
 /*social media icones*/
@@ -358,7 +354,12 @@ a {
   left: 50%;
   height: 100%;
   width: 4px;
-  background: #809bce;
+  background: #b2967d;
+}
+@media (max-width: 1024px) {
+  .cd-timeline__container:before {
+    left: 0;
+  }
 }
 
 /* Flexbox to align content and image inside each cd-timeline__block element */

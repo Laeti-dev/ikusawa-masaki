@@ -21,7 +21,11 @@
     left: 50%;
     height: 100%;
     width: 4px;
-    background: $color-contact-icons;
+    background: $color-aside-bg;
+
+    @media (max-width: 1024px) {
+      left: 0;
+    }
   }
 }
 
