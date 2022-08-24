@@ -21,6 +21,7 @@
   top: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -10;
 }
 
 /* // .banner h1 {
@@ -72,7 +73,7 @@
 }
 
 .social-list i, .contact-list i {
-  color: #809bce;
+  color: whitesmoke;
 }
 
 .cd-timeline__img > i {
@@ -91,8 +92,9 @@
   height: 60px;
   width: 58px; /*needs to be set to display element with fixed property*/
   border-radius: 99px;
-  background-color: black;
+  background-color: whitesmoke;
   cursor: pointer;
+  z-index: 99;
 }
 
 .hamburger {
@@ -113,7 +115,7 @@
   height: 4px;
   /*will offset the position by 2px because*/
   border-radius: 99px;
-  background-color: whitesmoke;
+  background-color: black;
   transition-duration: 0.25s;
 }
 .hamburger > span::before {
@@ -129,12 +131,12 @@
 .menu-toggle.is-active .hamburger > span {
   transform: rotate(45deg);
 }
-
 .menu-toggle.is-active .hamburger > span::before {
-  top: 0; /* brings the first one on the center of the screen*/
-  transform: rotate(0deg); /* brings it on the opposite way*/
+  top: 0;
+  /* brings the first one on the center of the screen*/
+  transform: rotate(0deg);
+  /* brings it on the opposite way*/
 }
-
 .menu-toggle.is-active .hamburger > span::after {
   top: 0;
   transform: rotate(90deg); /*X*/
@@ -271,38 +273,9 @@ a {
   text-align: center;
 }
 
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 100%;
-}
-
-.form-container {
-  max-width: 100%;
-  /* z-index: -1; */
-}
-
-.form-control,
-textarea {
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px "Lato", sans-serif;
-  letter-spacing: 2px;
-}
-
-/* contact right side*/
 .contact-container {
-  max-width: 352px;
+  display: flex;
+  margin: auto;
   color: #000;
   margin-left: 16px;
   padding-left: 0;
@@ -317,7 +290,6 @@ textarea {
 }
 
 .list-item {
-  color: black;
   /* font-size: .75rem; */
   line-height: 4;
   /* display: flex; */
@@ -331,7 +303,7 @@ textarea {
   font-size: 1.25rem;
 }
 .contact-text a {
-  color: #000;
+  color: WHITE;
   text-decoration: none;
   transition-duration: 0.2s;
 }
@@ -442,23 +414,23 @@ textarea {
   padding-left: 300px;
   color: #040b14;
   text-align: center;
-}
-
-/* ::before selector in absolute position to create the vertical line */
+} /* ::before selector in absolute position to create the vertical line */
 .cd-timeline {
   overflow: hidden;
-  padding: var(--space-lg) 0;
+  padding: calc(2 * var(--space-unit)) 0;
 }
 
 .cd-timeline__container {
   position: relative;
+  padding: calc(1.25 * var(--space-unit)) 0;
+  max-width: 80rem;
 }
 .cd-timeline__container:before {
   /* this is the timeline vertical line */
   content: "";
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 50%;
   height: 100%;
   width: 4px;
   background: #809bce;
@@ -468,6 +440,11 @@ textarea {
 .cd-timeline__block {
   display: flex;
 }
+@media (min-width: 64rem) {
+  .cd-timeline__block:nth-child(even) {
+    flex-direction: row-reverse; /*for even blocks -> lay out content from right to left */
+  }
+}
 
 .cd-timeline__img {
   display: flex;
@@ -475,8 +452,19 @@ textarea {
   align-items: center;
   flex-shrink: 0;
 }
+@media (min-width: 64rem) {
+  .cd-timeline__img {
+    order: 1; /*flex order -> place the image after cd-timeline__content */
+  }
+}
 
 .cd-timeline__content {
   flex-grow: 1; /* expand element so that it takes up all the available space inside its parent*/
   padding-left: 8px;
+}
+@media (min-width: 64rem) {
+  .cd-timeline__content {
+    width: 45%;
+    flex-grow: 0; /* prevent element from growing inside its parent */
+  }
 }/*# sourceMappingURL=main.css.map */

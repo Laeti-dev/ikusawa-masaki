@@ -7,42 +7,9 @@
   text-align: center;
 }
 
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 100%;
-}
-
-.form-container {
-  max-width: 100%;
-  /* z-index: -1; */
-}
-
-.form-control,
-textarea {
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  letter-spacing: 1px;
-
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
-}
-
-
-
-/* contact right side*/
-
 .contact-container {
-  max-width: 352px;
+  display: flex;
+  margin: auto;
   color: #000;
   margin-left: 16px;
   padding-left: 0;
@@ -57,7 +24,6 @@ textarea {
 }
 
 .list-item{
-  color: black;
   /* font-size: .75rem; */
   line-height: 4;
   /* display: flex; */
@@ -71,7 +37,7 @@ textarea {
   font-size: 1.25rem;
 
   a {
-      color: #000;
+      color: WHITE;
       text-decoration: none;
       transition-duration: 0.2s;
 

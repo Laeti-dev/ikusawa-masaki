@@ -1,21 +1,24 @@
+@import '../utils/breakpoints';
+@import '../utils/spacing';
 @import '../utils/variables';
 
 /* ::before selector in absolute position to create the vertical line */
 .cd-timeline {
   overflow: hidden;
-  padding: var(--space-lg) 0;
+  padding: $space-lg 0;
 }
 
 .cd-timeline__container {
   position: relative;
-  // padding: var(--space-md) 0;
+  padding: $space-md 0;
+  max-width: 80rem;
 
   &:before {
     /* this is the timeline vertical line */
     content: '';
     position: absolute;
     top: 0;
-    left: 18px;
+    left: 50%;
     height: 100%;
     width: 4px;
     background: $color-contact-icons;
@@ -26,10 +29,11 @@
 .cd-timeline__block {
   display: flex;
 
-  // @include breakpoint(md) {
-  //   &:nth-child(even) {
-  //     flex-direction: row-reverse;  /*for even blocks -> lay out content from right to left */
-  //   }
+  @include breakpoint(md) {
+    &:nth-child(even) {
+      flex-direction: row-reverse;  /*for even blocks -> lay out content from right to left */
+    }
+  }
 }
 
 .cd-timeline__img {
@@ -38,18 +42,18 @@
   align-items: center;
   flex-shrink: 0;
 
-  // @include breakpoint(md) {
-  //   order: 1; /*flex order -> place the image after cd-timeline__content */
-  // }
+  @include breakpoint(md) {
+    order: 1; /*flex order -> place the image after cd-timeline__content */
+  }
 }
 
 .cd-timeline__content {
   flex-grow: 1; /* expand element so that it takes up all the available space inside its parent*/
   padding-left: 8px;
-  // @include breakpoint(md) {
-  //   width: 45%;
-  //   flex-grow: 0; /* prevent element from growing inside its parent */
-  // }
+  @include breakpoint(md) {
+    width: 45%;
+    flex-grow: 0; /* prevent element from growing inside its parent */
+  }
 }
 
 // For the animation to work .cd-timeline__img--hidden/.cd-timeline__content--hidden,
@@ -78,12 +82,12 @@
 //     transform: scale(0.5);
 //   }
 
-  // 60% {
-  //   opacity: 1;
-  //   transform: scale(1.2);
-  // }
+//   60% {
+//     opacity: 1;
+//     transform: scale(1.2);
+//   }
 
-  // 100% {
-  //   transform: scale(1);
-  // }
+//   100% {
+//     transform: scale(1);
+//   }
 // }

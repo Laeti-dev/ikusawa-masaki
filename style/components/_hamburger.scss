@@ -6,8 +6,9 @@
   height: 60px;
   width: 58px; /*needs to be set to display element with fixed property*/
   border-radius: 99px;
-  background-color: black;
+  background-color: whitesmoke;
   cursor: pointer;
+  z-index: 99;
 }
 
 .hamburger {
@@ -27,7 +28,7 @@
       height: 4px;
       /*will offset the position by 2px because*/
       border-radius: 99px;
-      background-color: whitesmoke;
+      background-color: black;
       transition-duration: .25s;
     }
 
@@ -44,16 +45,20 @@
 }
 
 /*adding animations*/
-.menu-toggle.is-active .hamburger > span {
+.menu-toggle.is-active .hamburger {
+  > span {
   transform: rotate(45deg);
-}
+  }
 
-.menu-toggle.is-active .hamburger > span::before {
-  top: 0; /* brings the first one on the center of the screen*/
-  transform: rotate(0deg);/* brings it on the opposite way*/
-}
+  >span::before {
+  top: 0;
+  /* brings the first one on the center of the screen*/
+  transform: rotate(0deg);
+  /* brings it on the opposite way*/
+  }
 
-.menu-toggle.is-active .hamburger > span::after {
+  > span::after {
   top: 0;
   transform: rotate(90deg); /*X*/
+  }
 }
