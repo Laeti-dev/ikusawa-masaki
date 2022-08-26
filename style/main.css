@@ -163,7 +163,6 @@
   font-size: 1.5rem;
 }
 
-/* @import url('sections/main.css'); */
 .skill {
   width: 24%;
 }
@@ -344,7 +343,13 @@ footer a {
   padding-left: 300px;
   color: #040b14;
   text-align: center;
-} /* ::before selector in absolute position to create the vertical line */
+}
+
+#resume {
+  display: none;
+}
+
+/* ::before selector in absolute position to create the vertical line */
 .cd-timeline {
   overflow: hidden;
   padding: calc(2 * var(--space-unit)) 0;
