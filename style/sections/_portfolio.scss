@@ -3,3 +3,8 @@
   color: #040b14;
   text-align: center;
 }
+
+.galery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
