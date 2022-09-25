@@ -345,6 +345,11 @@ footer a {
   text-align: center;
 }
 
+.galery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 #resume {
   display: none;
 }
