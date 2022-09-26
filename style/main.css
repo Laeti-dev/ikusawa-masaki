@@ -349,6 +349,18 @@ footer a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+@media (max-width: 599px) {
+  .galery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .galery > img {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+}
 
 #resume {
   display: none;

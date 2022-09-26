@@ -1,3 +1,5 @@
+@import '../utils/mixins';
+
 #portfolio{
   padding-left: 300px;
   color: #040b14;
@@ -7,4 +9,13 @@
 .galery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  @include for-size(phone) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    >img {
+      width: 100%;
+      margin-bottom: 0.75rem;
+    }
+  }
 }
