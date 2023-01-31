@@ -1,6 +1,25 @@
 {
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "typed.js": "^2.0.12"
-  }
-
+  },
+  "name": "ikusawa-masaki",
+  "version": "1.0.0",
+  "main": "portfolio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laeti-dev/ikusawa-masaki.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laeti-dev/ikusawa-masaki/issues"
+  },
+  "homepage": "https://github.com/Laeti-dev/ikusawa-masaki#readme",
+  "description": ""
 }
